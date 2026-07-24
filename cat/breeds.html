@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kitty Kingdom - Breeds</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+    <header class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="index.html" class="logo">
+                <i class="fas fa-cat"></i> 
+                <span>Kitty Kingdom</span>
+            </a>
+            <div class="nav-links">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./breeds.html" class="active">Breeds</a>
+                <a href="./careguide.html">Care Guide</a>
+                <a href="./blog.html">Blog</a>
+                <a href="./shop.html">Shop</a>
+            </div>
+            <div class="nav-icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-user"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-shopping-bag"></i>
+                <button class="hamburger" aria-label="menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Breeds Hero -->
+        <section class="page-hero">
+            <div class="container page-hero-inner">
+                <div class="page-hero-text">
+                    <span class="badge"><i class="fas fa-paw"></i> Cat Breeds</span>
+                    <h1>Different breeds,<br />unique personalities.</h1>
+                    <p>Explore popular cat breeds and find the perfect feline companion that matches your lifestyle and heart.</p>
+                </div>
+                <div class="page-hero-image">
+                    <div class="page-img-placeholder">
+                        <img src="./image/breeds.jpeg" alt="Cat breeds" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Breed Filters -->
+        <section class="breed-filters">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Breeds</button>
+                    <button class="filter-btn" data-filter="long">Long Hair</button>
+                    <button class="filter-btn" data-filter="short">Short Hair</button>
+                    <button class="filter-btn" data-filter="large">Large Size</button>
+                    <button class="filter-btn" data-filter="medium">Medium Size</button>
+                    <button class="filter-btn" data-filter="small">Small Size</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Breed Cards -->
+        <section class="breed-cards-section">
+            <div class="container">
+                <p class="breed-subtitle">Learn about each breed's personality, care needs, and unique traits.</p>
+                <div class="breed-cards-grid">
+                    <div class="breed-card" data-category="long large">
+                        <div class="breed-img">
+                            <img src="./image/ragdol.jpeg" alt="Ragdoll" />
+                        </div>
+                        <h3>Ragdoll</h3>
+                        <p>Affectionate and gentle giants known for their calm and sweet nature.</p>
+                        <a href="#" class="breed-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="breed-card" data-category="long medium">
+                        <div class="breed-img">
+                            <img src="./image/persian.jpeg" alt="Persian" />
+                        </div>
+                        <h3>Persian</h3>
+                        <p>Calm, quiet, and loving cats with a luxurious long coat and sweet personality.</p>
+                        <a href="#" class="breed-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="breed-card" data-category="short medium">
+                        <div class="breed-img">
+                            <img src="./image/britis-short.jpeg" alt="British Shorthair" />
+                        </div>
+                        <h3>British Shorthair</h3>
+                        <p>Easygoing and independent cats with a plush coat and adorable expression.</p>
+                        <a href="#" class="breed-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="breed-card" data-category="short medium">
+                        <div class="breed-img">
+                            <img src="./image/Gato de bengalas 😍😍.jpeg" alt="Bengal" />
+                        </div>
+                        <h3>Bengal</h3>
+                        <p>Playful, energetic, and intelligent cats with a wild beauty and adventurous spirit.</p>
+                        <a href="#" class="breed-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="breed-card" data-category="long large">
+                        <div class="breed-img">
+                            <img src="./image/main coon.jpeg" alt="Maine Coon" />
+                        </div>
+                        <h3>Maine Coon</h3>
+                        <p>Gentle giants with a friendly nature and a majestic appearance.</p>
+                        <a href="#" class="breed-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="breed-card" data-category="short medium">
+                        <div class="breed-img">
+                            <img src="./image/Siamese Cats__Elegant, talkative, and full of personality—Siamese cats are natural performers_ 🎭🐾_What’s your favorite Siamese cat trait__.jpeg" alt="Siamese" />
+                        </div>
+                        <h3>Siamese</h3>
+                        <p>Talkative, social, and intelligent cats that love human companionship.</p>
+                        <a href="#" class="breed-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="breed-card" data-category="short small">
+                        <div class="breed-img">
+                            <img src="./image/Scottish Fold Cat_ Scottish Folds are homebodies and do best when living as indoor cats_.jpeg" alt="Scottish Fold" />
+                        </div>
+                        <h3>Scottish Fold</h3>
+                        <p>Sweet, calm, and adorable cats with their signature folded ears.</p>
+                        <a href="#" class="breed-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="breed-card" data-category="short small">
+                        <div class="breed-img">
+                            <img src="./image/Mon boy.jpeg" alt="Sphynx" />
+                        </div>
+                        <h3>Sphynx</h3>
+                        <p>Unique and affectionate cats known for their hairless look and warm personalities.</p>
+                        <a href="#" class="breed-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz CTA -->
+        <section class="quiz-cta">
+            <div class="container quiz-container">
+                <div class="quiz-content">
+                    <h2>Not sure which breed<br />is right for you?</h2>
+                    <a href="#" class="btn btn-primary">Take Our Breed Match Quiz</a>
+                    <p>We're here to help you find the perfect feline friend for your home and lifestyle.</p>
+                    <a href="#" class="btn btn-outline">Talk to Our Experts</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter">
+            <div class="container newsletter-card">
+                <div class="newsletter-left">
+                    <h2>Join our cat-loving<br />community!</h2>
+                    <p>Get exclusive tips, adorable stories, and special offers straight to your inbox.</p>
+                </div>
+                <div class="newsletter-right">
+                    <div class="input-group">
+                        <input type="email" placeholder="Your email address" />
+                    </div>
+                    <button class="btn btn-subscribe">Subscribe</button>
+                    <div class="newsletter-cat">
+                        <i class="fas fa-cat"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-cat"></i>
+                        <span>Kitty Kingdom</span>
+                    </div>
+                    <p class="footer-tagline">Because every cat<br />deserves the best.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Our Mission</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping &amp; Returns</a></li>
+                        <li><a href="#">Track Your Order</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="careguide.html">Care Guide</a></li>
+                        <li><a href="breeds.html">Cat Breeds</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="#">Adoption</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="shop.html">All Products</a></li>
+                        <li><a href="shop.html">New Arrivals</a></li>
+                        <li><a href="shop.html">Best Sellers</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kitty Kingdom. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
